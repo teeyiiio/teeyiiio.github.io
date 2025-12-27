@@ -1,0 +1,5 @@
+title: 我的Java学习博客
+github_username: teeyiiio
+theme: minima
+plugins:
+  - jekyll-feed
