@@ -34,6 +34,7 @@ public class Main {
    }
 }
 ```
+
 # 二、 基本数据类型
 Java定义了以下几种基本数据类型：
 - **整数类型：byte，short，int，long**
