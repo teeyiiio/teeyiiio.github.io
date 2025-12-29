@@ -72,6 +72,7 @@ public class Main {
 }
 ```
 ## (浮点型)
+![现在就出发](https://www.naifeitv.xyz/upload/vod/20251018-1/13902da461173debdceccceae6bbfbdc.jpg)
 
 
 
