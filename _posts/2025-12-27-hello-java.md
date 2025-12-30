@@ -1,4 +1,4 @@
----
+<img width="1819" height="597" alt="image" src="https://github.com/user-attachments/assets/b9136451-7aea-4e65-a76e-dafbd057b757" />---
 layout: post
 title: "Java 变量与数据类型学习总结"
 date: 2025-12-27 12:00:00 +0800
@@ -96,6 +96,36 @@ int age = 12;
 boolean isAdult = age >= 18; // 计算结果为false
 ```
 ## (四).字符类型
+> 字符类型char表示一个字符。Java的char类型除了可表示标准的ASCII外，还可以表示一个Unicode字符：
+```java
+// 字符类型
+public class Main {
+    public static void main(String[] args) {
+        char a = 'A';
+        char zh = '中';
+        System.out.println(a);
+        System.out.println(zh);
+    }
+}
+```
+**注意char类型使用单引号'，且仅有一个字符，要和双引号"的字符串类型区分开。**
+
+## (五).引用类型
+> 除了上述基本类型的变量，剩下的都是引用类型。例如，引用类型最常用的就是String字符串:
+```java
+String s = "hello";
+```
+## (六).常量
+> 定义变量的时候，如果加上final修饰符，这个变量就变成了常量
+> 核心特点是 “一旦完成初始化赋值，后续就无法再修改其值”
+> 为了和变量区分开来，常量名通常全部大写 + 下划线分隔的格式
+```java
+// 例子
+final double PI = 3.14; // PI是一个常量
+double r = 5.0;
+double area = PI * r * r;
+PI = 300; // compile error!
+```
 
 ![现在就出发](https://www.naifeitv.xyz/upload/vod/20251018-1/13902da461173debdceccceae6bbfbdc.jpg)
 [点击跳转到现在就出发](https://v.qq.com/x/cover/mzc00200znyfa5u/g4101cwlymi.html)
