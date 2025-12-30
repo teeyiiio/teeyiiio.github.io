@@ -1,4 +1,4 @@
-<img width="1819" height="597" alt="image" src="https://github.com/user-attachments/assets/b9136451-7aea-4e65-a76e-dafbd057b757" />---
+---
 layout: post
 title: "Java 变量与数据类型学习总结"
 date: 2025-12-27 12:00:00 +0800
