@@ -33,6 +33,7 @@ public class Main {
         System.out.println("n = " + n); // 再次打印n的值，n应该是200还是300？
    }
 }
+
 ```
 
 # 二、 基本数据类型
@@ -72,7 +73,30 @@ public class Main {
     }
 }
 ```
-## (浮点型)
+## (二).浮点型
+> float类型，需要加上f后缀
+下面是定义浮点数的例子：
+```java
+float f1 = 3.14f;
+float f2 = 3.14e38f; // 科学计数法表示的3.14x10^38
+float f3 = 1.0; // 错误：不带f结尾的是double类型，不能赋值给float
+
+double d = 1.79e308;
+double d2 = -1.79e308;
+double d3 = 4.9e-324; // 科学计数法表示的4.9x10^-324
+```
+## (三).布尔类型
+> 布尔类型boolean只有true和false两个值
+布尔类型总是关系运算的计算结果：
+```java
+boolean b1 = true;
+boolean b2 = false;
+boolean isGreater = 5 > 3; // 计算结果为true
+int age = 12;
+boolean isAdult = age >= 18; // 计算结果为false
+```
+## (四).字符类型
+
 ![现在就出发](https://www.naifeitv.xyz/upload/vod/20251018-1/13902da461173debdceccceae6bbfbdc.jpg)
 [点击跳转到现在就出发](https://v.qq.com/x/cover/mzc00200znyfa5u/g4101cwlymi.html)
 
