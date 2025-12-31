@@ -18,28 +18,6 @@ double score = 92.5;
 ```
 > 不写初始值，就相当于给它指定了默认值。默认值总是0。
 
-## (二).引用类型的变量
-```java
-// 变量之间的赋值
-public class Main {
-    public static void main(String[] args) {
-        int n = 100; // 定义变量n，同时赋值为100
-        System.out.println("n = " + n); // 打印n的值
-
-        n = 200; // 变量n赋值为200
-        System.out.println("n = " + n); // 打印n的值
-
-        int x = n; // 变量x赋值为n（n的值为200，因此赋值后x的值也是200）
-        System.out.println("x = " + x); // 打印x的值
-
-        x = x + 100; // 变量x赋值为x+100（x的值为200，因此赋值后x的值是200+100=300）
-        System.out.println("x = " + x); // 打印x的值
-        System.out.println("n = " + n); // 再次打印n的值，n应该是200还是300？
-   }
-}
-
-```
-
 # 二、 基本数据类型
 Java定义了以下几种基本数据类型：
 - 整数类型：byte，short，int，long
@@ -117,7 +95,26 @@ public class Main {
 ## (五).引用类型
 > 除了上述基本类型的变量，剩下的都是引用类型。例如，引用类型最常用的就是String字符串:
 ```java
+//例如，引用类型最常用的就是String字符串:
 String s = "hello";
+
+// 变量之间的赋值
+public class Main {
+    public static void main(String[] args) {
+        int n = 100; // 定义变量n，同时赋值为100
+        System.out.println("n = " + n); // 打印n的值
+
+        n = 200; // 变量n赋值为200
+        System.out.println("n = " + n); // 打印n的值
+
+        int x = n; // 变量x赋值为n（n的值为200，因此赋值后x的值也是200）
+        System.out.println("x = " + x); // 打印x的值
+
+        x = x + 100; // 变量x赋值为x+100（x的值为200，因此赋值后x的值是200+100=300）
+        System.out.println("x = " + x); // 打印x的值
+        System.out.println("n = " + n); // 再次打印n的值，n应该是200还是300？
+   }
+}
 ```
 ## (六).常量
 > - 定义变量的时候，如果加上final修饰符，这个变量就变成了常量
