@@ -56,9 +56,10 @@ public class Main {
 }
 ```
 ## (二).浮点型
-> float类型，需要加上**f**后缀
+> float类型，需要加上 **f** 后缀
 下面是定义浮点数的例子：
 ```java
+//下面是定义浮点数的例子：
 float f1 = 3.14f;
 float f2 = 3.14e38f; // 科学计数法表示的3.14x10^38
 float f3 = 1.0; // 错误：不带f结尾的是double类型，不能赋值给float
@@ -67,9 +68,11 @@ double d = 1.79e308;
 double d2 = -1.79e308;
 double d3 = 4.9e-324; // 科学计数法表示的4.9x10^-324
 ```
+
 ## (三).布尔类型
-> 布尔类型boolean**只有true和false**两个值
-布尔类型总是关系运算的计算结果：
+> 布尔类型boolean **只有true和false** 两个值
+-布尔类型总是关系运算的计算结果：
+
 ```java
 boolean b1 = true;
 boolean b2 = false;
@@ -79,6 +82,7 @@ boolean isAdult = age >= 18; // 计算结果为false
 ```
 ## (四).字符类型
 > 字符类型char表示一个字符。Java的char类型除了可表示标准的ASCII外，还可以表示一个Unicode字符：
+
 ```java
 // 字符类型
 public class Main {
@@ -94,6 +98,7 @@ public class Main {
 
 ## (五).引用类型
 > 除了上述基本类型的变量，剩下的都是引用类型。例如，引用类型最常用的就是String字符串:
+
 ```java
 //例如，引用类型最常用的就是String字符串:
 String s = "hello";
@@ -120,6 +125,7 @@ public class Main {
 > - 定义变量的时候，如果加上final修饰符，这个变量就变成了常量
 > - 核心特点是 “一旦完成初始化赋值，后续就无法再修改其值”
 > - 为了和变量区分开来，常量名通常全部大写 + 下划线分隔的格式
+
 ```java
 // 例子
 final double PI = 3.14; // PI是一个常量
