@@ -23,6 +23,132 @@ double score = 92.5;
 2. 实列变量
 3. 局部变量
 
+```java
+public class Dome2 {
+    //Dome2就是这个文件的类
+
+    //类变量  static（关键词）,类变量是从属于Dome2这个类的。并且它会随着这个类一起出来一起消失。
+    static double salary = 2500;
+
+    //属性：变量(类里面，除了方法还能定义一些属性)
+
+    //实例变量：从属于对象；（对象相当于Dome2）。
+    // 如果不自行初始化，这个基本类型的默认值就是0或者0.0。
+    //出了基本类型，其余的默认值都是null。
+    //布尔值：默认值是false。
+    // 例如：
+    String name;
+    int age;
+    //随后在main方法里使用
+
+    //main方法（在类里面）
+    public static void main(String[] args) {
+
+        //局部变量（在方法里面）：必须声明和初始化值.如下所示：
+        int i = 10;
+        System.out.println(i);
+
+        //变量类型 变量名字 = new Dome2();
+        Dome2 dome2 = new Dome2();
+        //通过这个dome2就可以去用它的类里的东西了
+        System.out.println(dome2.age);
+        System.out.println(dome2.name);
+
+        //类变量  static
+        System.out.println(salary);
+    }
+
+    //其他方法。如下面的add方法
+    public void add() {
+
+    }
+}
+
+```
+
+
+#### 1.类变量
+```java
+public class Dome2 {
+    //Dome2就是这个文件的类
+
+    //类变量  static（关键词）,类变量是从属于Dome2这个类的。并且它会随着这个类一起出来一起消失。
+    static double salary = 2500;
+
+    //属性：变量(类里面，除了方法还能定义一些属性)
+
+    //main方法（在类里面）
+    public static void main(String[] args) {
+
+        //类变量  static
+        System.out.println(salary);
+    }
+
+    //其他方法。如下面的add方法
+    public void add() {
+
+    }
+}
+```
+
+
+#### 2.实例变量
+```java
+public class Dome2 {
+    //Dome2就是这个文件的类
+
+    //属性：变量(类里面，除了方法还能定义一些属性(变量))
+
+    //实例变量：从属于对象；（对象相当于Dome2）。
+    // 如果不自行初始化，这个基本类型的默认值就是0或者0.0。
+    //除了基本类型，其余的默认值都是null。
+    //布尔值：默认值是false。
+    // 例如：
+    String name;
+    int age;
+    //随后在main方法里使用
+
+    //main方法（在类里面）
+    public static void main(String[] args) {
+
+        //实例变量格式：
+        //变量类型 变量名字 = new Dome2();（生成了一个新的Dome2也就是，新命名的变量名字dome2）
+        Dome2 dome2 = new Dome2();
+        //通过这个dome2就可以去用它的类里的东西了
+        System.out.println(dome2.age);  //输出 0 ；
+        System.out.println(dome2.name);  //输出 null ；
+    }
+
+    //其他方法。如下面的add方法
+    public void add() {
+
+    }
+}
+```
+#### 3.局部变量
+```java
+public class Dome2 {
+    //Dome2就是这个文件的类
+
+    //main方法（在类里面）
+    public static void main(String[] args) {
+
+        //局部变量（在方法里面）：必须声明和初始化值.如下所示：
+        int i = 10;
+        System.out.println(i); //输出 10 ；
+
+    }
+
+    //其他方法。如下面的add方法
+    public void add() {
+
+    }
+}
+
+```
+
+
+
 
 # 二、 基本数据类型
 Java定义了以下几种基本数据类型：
