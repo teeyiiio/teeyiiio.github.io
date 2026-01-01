@@ -385,16 +385,24 @@ public class Dome2 {
 
 
 ## (八).常量
-- 定义变量的时候，如果加上final修饰符，这个变量就变成了常量
-- 核心特点是 “一旦完成初始化赋值，后续就无法再修改其值”
-- 为了和变量区分开来，常量名通常全部大写 + 下划线分隔的格式
-
+- 定义变量的时候，如果加上final修饰符，这个变量就变成了常量。
+- 核心特点是 “一旦完成初始化赋值，后续就无法再修改其值”。
+- final , static等，修饰符，不存在先后顺序。
+- 常量名用大写字母和下划线命名。
+- 定义格式：final 常量名 = 值;
 ```java
-// 例子
-final double PI = 3.14; // PI是一个常量
-double r = 5.0;
-double area = PI * r * r;
-PI = 300; // compile error!
+public class Demo3 {
+
+    //final , static等，修饰符，不存在先后顺序。
+    //static final double PI = 3.14; //这样写也可以
+    final static double PI = 3.14; // 添加了final常量
+
+    public static void main(String[] args) {
+
+        System.out.println(PI);
+    }
+}
+
 ```
 
 ![现在就出发](https://www.naifeitv.xyz/upload/vod/20251018-1/13902da461173debdceccceae6bbfbdc.jpg)
