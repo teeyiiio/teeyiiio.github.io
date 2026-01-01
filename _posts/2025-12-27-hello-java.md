@@ -33,12 +33,14 @@ Java基本数据类型占用的字节数：
 - float: 4
 - double: 8
 - char: 2
+
+
 ## (一).整数
 各种整型能表示的最大范围如下：
 - byte：-128 ~ 127
 - short: -32768 ~ 32767
-- int: -2147483648 ~ 2147483647
-- long: -9223372036854775808 ~ 9223372036854775807,long型的结尾需要加L
+- int: -21_4748_3648 ~ 21_4748_3647
+- long: -922_3372_0368_5477_5808 ~ 922_3372_0368_5477_5807,long型的结尾需要加L
 ```java
 // 定义整型的例子:
 public class Main {
@@ -177,6 +179,8 @@ public class Main {
 }
 ```
 ## (七).类型转换
+> 注：- 1.不能对boolean值进行转换
+> - 2.转换的时候可能存在内存溢出，或精度问题！
 #### (1).强制转换：**表示的最大范围由高---低时需要强制转换！！**
 强制转换格式：（类型）变量名   
 ```java
@@ -208,8 +212,42 @@ public class Dome1 {
     }
 }
 ```
+
 <img width="487" height="213" alt="image" src="https://github.com/user-attachments/assets/1774a6c1-7e58-4dc4-8a74-02abb33fbd9f" />
 如图中结果输出b System.out.println(b);结果为128.0正确
+
+```java
+public class Dome2 {
+    public static void main(String[] args) {
+        //操作比较大的数字时，注意溢出问题
+        //用下划线分割数字
+        int money = 10_0000_0000 ; // 十亿
+        int years = 20 ;
+        //int total1 = money * years;//错误，出现溢出
+        //long total2 = money * years;//错误，还是出现溢出。因为money * years在转换成long类型前就已经发生溢出，错误了。
+        long total3 = money * ((long)years);//正确，先将money或years中的一个先转化成long类型，然后money*((long)years)的过程中自动转换成了long类型。
+        System.out.println(total3);
+    }
+}
+```
+
+#### (3).jdk的特性，数字之间可以用下划线分割。
+当数字很大难以区分时可以使用下划线分割，方便识别。
+```java
+public class Dome2 {
+    public static void main(String[] args) {
+        //操作比较大的数字时，注意溢出问题
+        //用下划线分割数字
+        int money = 10_0000_0000 ; // 十亿
+        int years = 20 ;
+        //int total1 = money * years;//错误，出现溢出
+        //long total2 = money * years;//错误，还是出现溢出。因为money * years在转换成long类型前就已经发生溢出，错误了。
+        long total3 = money * ((long)years);//正确，先将money或years中的一个先转化成long类型，然后money*((long)years)的过程中自动转换成了long类型。
+        System.out.println(total3);
+    }
+}
+```
+
 
 
 ## (八).常量
