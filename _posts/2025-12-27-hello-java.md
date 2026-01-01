@@ -176,7 +176,43 @@ public class Main {
    }
 }
 ```
-## (七).常量
+## (七).类型转换
+#### (1).强制转换：**表示的最大范围由高---低时需要强制转换！！**
+强制转换格式：（类型）变量名   
+```java
+public class Dome1 {
+    public static void main(String[] args) {
+        int i = 128;
+        byte b = (byte) i;//内存溢出
+
+        //强制转换格式：  （类型）变量名
+
+        System.out.println(i);
+        System.out.println(b);
+    }
+}
+```
+输出结果：
+<img width="620" height="217" alt="image" src="https://github.com/user-attachments/assets/15d1fbf6-0a7f-4add-b355-94d9dbf39dd4" />
+byte的最大范围是-128 ~ 127，128超出范围造成溢出结果错误，如图中System.out.println(b);输出为-128是错误的
+
+#### (2).自动转换：**表示的最大范围由低---高时会自动转换**
+```java
+public class Dome1 {
+    public static void main(String[] args) {
+        int i = 128;
+        double b = i;//由低到高自动转换
+
+        System.out.println(i);
+        System.out.println(b);
+    }
+}
+```
+<img width="487" height="213" alt="image" src="https://github.com/user-attachments/assets/1774a6c1-7e58-4dc4-8a74-02abb33fbd9f" />
+如图中结果输出b System.out.println(b);结果为128.0正确
+
+
+## (八).常量
 > - 定义变量的时候，如果加上final修饰符，这个变量就变成了常量
 > - 核心特点是 “一旦完成初始化赋值，后续就无法再修改其值”
 > - 为了和变量区分开来，常量名通常全部大写 + 下划线分隔的格式
