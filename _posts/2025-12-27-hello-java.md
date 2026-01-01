@@ -46,16 +46,16 @@ public class Dome2 {
 
         //局部变量（在方法里面）：必须声明和初始化值.如下所示：
         int i = 10;
-        System.out.println(i);
+        System.out.println(i); //输出 10 ；
 
         //变量类型 变量名字 = new Dome2();
         Dome2 dome2 = new Dome2();
         //通过这个dome2就可以去用它的类里的东西了
-        System.out.println(dome2.age);
-        System.out.println(dome2.name);
+        System.out.println(dome2.age); //输出 0 ；
+        System.out.println(dome2.name); //输出 null ；
 
         //类变量  static
-        System.out.println(salary);
+        System.out.println(salary); //输出 2500.0 ；
     }
 
     //其他方法。如下面的add方法
@@ -81,7 +81,7 @@ public class Dome2 {
     public static void main(String[] args) {
 
         //类变量  static
-        System.out.println(salary);
+        System.out.println(salary); //输出 2500.0 ；
     }
 
     //其他方法。如下面的add方法
